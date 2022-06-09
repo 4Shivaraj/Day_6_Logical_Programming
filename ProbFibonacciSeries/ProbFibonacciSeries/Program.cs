@@ -12,6 +12,8 @@ namespace LogicalProblem
         {
             Console.WriteLine("Welocme to Logical Problems");
             Console.WriteLine("1 for Fibonacci Series Problem");
+            Console.WriteLine("2 for Perfect Number Problem");
+
 
             int Problem = Convert.ToInt32(Console.ReadLine());
             switch (Problem)
@@ -19,6 +21,10 @@ namespace LogicalProblem
                 case 1:
                     FibonacciSeries fibonacci = new FibonacciSeries();
                     fibonacci.Fibonaaci();
+                    break;
+                case 2:
+                    PerfectNumberProblems perfectNumberProblems = new PerfectNumberProblems();
+                    perfectNumberProblems.PerfectNumber();
                     break;
 
             }
