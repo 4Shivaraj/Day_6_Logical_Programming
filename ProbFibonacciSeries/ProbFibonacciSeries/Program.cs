@@ -17,9 +17,7 @@ namespace LogicalProblem
             Console.WriteLine("3 for Prime Number Problem");
             Console.WriteLine("4 for Reverse Number Problem");
             Console.WriteLine("5 for Coupon Number Problem");
-
-
-
+            Console.WriteLine("6 for Stop Watch Problem");
 
             int Problem = Convert.ToInt32(Console.ReadLine());
             switch (Problem)
@@ -41,9 +39,13 @@ namespace LogicalProblem
                     reverse.Reverse();
                     break;
                 case 5:
-                    Console.Write("\tHow many numbers you wants to generate: ");
+                    Console.Write("How many numbers you wants to generate: ");
                     int N = Convert.ToInt32(Console.ReadLine());
                     CouponNumber.Coupon(N);
+                    break;
+                case 6:
+                    StopWatchProblem stopWatchProblem = new StopWatchProblem();
+                    stopWatchProblem.StopWatch();
                     break;
 
 
