@@ -16,6 +16,7 @@ namespace LogicalProblem
             Console.WriteLine("2 for Perfect Number Problem");
             Console.WriteLine("3 for Prime Number Problem");
             Console.WriteLine("4 for Reverse Number Problem");
+            Console.WriteLine("5 for Coupon Number Problem");
 
 
 
@@ -39,6 +40,12 @@ namespace LogicalProblem
                     ReverseNumber reverse = new ReverseNumber();
                     reverse.Reverse();
                     break;
+                case 5:
+                    Console.Write("\tHow many numbers you wants to generate: ");
+                    int N = Convert.ToInt32(Console.ReadLine());
+                    CouponNumber.Coupon(N);
+                    break;
+
 
             }
         }
