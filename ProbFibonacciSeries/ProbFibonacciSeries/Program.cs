@@ -15,6 +15,8 @@ namespace LogicalProblem
             Console.WriteLine("1 for Fibonacci Series Problem");
             Console.WriteLine("2 for Perfect Number Problem");
             Console.WriteLine("3 for Prime Number Problem");
+            Console.WriteLine("4 for Reverse Number Problem");
+
 
 
 
@@ -32,6 +34,10 @@ namespace LogicalProblem
                 case 3:
                     ProbPrimeNumber prob = new ProbPrimeNumber();
                     prob.PrimeNumbers();
+                    break;
+                case 4:
+                    ReverseNumber reverse = new ReverseNumber();
+                    reverse.Reverse();
                     break;
 
             }
